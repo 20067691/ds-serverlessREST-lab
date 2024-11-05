@@ -67,6 +67,48 @@
                 "vote_count"
             ],
             "type": "object"
+        },
+        "MovieCast": {
+            "additionalProperties": false,
+            "properties": {
+                "actorName": {
+                    "type": "string"
+                },
+                "movieId": {
+                    "type": "number"
+                },
+                "roleDescription": {
+                    "type": "string"
+                },
+                "roleName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "actorName",
+                "movieId",
+                "roleDescription",
+                "roleName"
+            ],
+            "type": "object"
+        },
+        "MovieCastMemberQueryParams": {
+            "additionalProperties": false,
+            "properties": {
+                "actorName": {
+                    "type": "string"
+                },
+                "movieId": {
+                    "type": "string"
+                },
+                "roleName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "movieId"
+            ],
+            "type": "object"
         }
     }
 }
