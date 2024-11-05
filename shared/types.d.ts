@@ -17,12 +17,19 @@ export type Movie =   {
   vote_count: number
 }
 
+// Query parameters for the "get specific movie" endpoint
+export type MovieQueryParams = {
+  movieId: string;  
+  cast?: string;    // Optional
+};
+
 export type MovieCast = {
   movieId: number;
   actorName: string;
   roleName: string;
   roleDescription: string;
 };
+
 // Used to validate the query string of HTTP Get requests
 export type MovieCastMemberQueryParams = {
   movieId: string;

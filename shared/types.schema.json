@@ -109,6 +109,21 @@
                 "movieId"
             ],
             "type": "object"
+        },
+        "MovieQueryParams": {
+            "additionalProperties": false,
+            "properties": {
+                "cast": {
+                    "type": "string"
+                },
+                "movieId": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "movieId"
+            ],
+            "type": "object"
         }
     }
 }
